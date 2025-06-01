@@ -1,0 +1,32 @@
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).parent.resolve()
+ASSETS_DIR = ROOT_DIR.parent / "assets"
+
+# Data paths
+DATA_PATH_MUSIC_INFO = ASSETS_DIR / "Music Info.csv"
+
+# Model parameters
+K_NEIGHBORS = 7                # default k for k‑NN
+SCALER_RANGE = (0, 1)          # MinMaxScaler range
+
+# Feature weights
+TAGS_WEIGHT = 50
+GENRE_WEIGHT = 50
+ARTIST_WEIGHT = 150
+YEAR_WEIGHT = 30
+
+# Audio features
+DURATION_MS_WEIGHT = 5
+DANCEABILITY_WEIGHT = 10
+ENERGY_WEIGHT = 10
+KEY_WEIGHT = 3
+LOUDNESS_WEIGHT = 3
+MODE_WEIGHT = 3
+SPEECHINESS_WEIGHT = 5
+ACOUSTICNESS_WEIGHT = 7
+INSTRUMENTALNESS_WEIGHT = 7
+LIVENESS_WEIGHT = 5
+VALENCE_WEIGHT = 10
+TEMPO_WEIGHT = 7
+TIME_SIGNATURE_WEIGHT = 3
